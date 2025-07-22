@@ -16,7 +16,7 @@ const AnalyticsDashboard = () => {
   const fetchData = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await axios.get('https://app.darsmok.ma/backend/api/plorders', {
+      const response = await axios.get('https://app.ownecoo.com/backend/api/plorders', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',

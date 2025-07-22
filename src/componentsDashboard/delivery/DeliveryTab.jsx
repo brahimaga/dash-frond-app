@@ -37,7 +37,7 @@ const OrderTrackingPage = () => {
       setLoading(true);
       setError(null);
       
-      const response = await axios.post('https://app.darsmok.ma/backend/api/login', {
+      const response = await axios.post('https://app.ownecoo.com/backend/api/login', {
         username: loginForm.username,
         password: loginForm.password
       });
@@ -54,7 +54,7 @@ const OrderTrackingPage = () => {
   // Fetch orders function
   const fetchOrders = async (token) => {
     try {
-      const response = await axios.get('https://app.darsmok.ma/backend/api/plorders', {
+      const response = await axios.get('https://app.ownecoo.com/backend/api/plorders', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
